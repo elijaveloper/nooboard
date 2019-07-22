@@ -1,0 +1,33 @@
+:root{
+    --border-color: #333;
+}
+#nooboard{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #111;
+    display: inline-block;
+    padding: 10px;
+}
+.nooboard_key{
+    display: inline-block;
+    width: 20px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: var(--border-color);
+    border-radius: 5px;
+    border-bottom: 5px solid #000;
+    margin: 2px;
+    background-color: #222;
+    color: white;
+    font-family: "calibri";
+}
+.nooboard_highlight{
+    background-color: green;
+    color: white !important;
+}
+#space{
+    color: #222;
+    border-color: var(--border-color);
+    border-bottom: 5px solid #000;
+    width: 200px;
+}

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="nooboard.css">
+    </head>
+    <body>
+        <div id="textarea"></div>
+        <div id="nooboard"></div>
+    </body>
+    <script src="nooboard.js"></script>
+    <script> 
+        window.onload = function(e){
+            const nboard = new nooboard();
+            nboard.render("nooboard");
+            
+            window.addEventListener("keydown",function(ev){
+                nooboard.highlight(ev.key);
+            });
+
+            window.addEventListener("keyup",function(ev){
+                nooboard.removehighlight(ev.key);
+            });
+        }
+    </script>
+</html>
